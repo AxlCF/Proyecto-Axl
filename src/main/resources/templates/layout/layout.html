@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+    <head th:fragment="head">
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/82a228b425.js" crossorigin="anonymous"></script>
+        <link rel="icon" type="image/png" th:href="@{/assets/favicon.ico}" />
+        <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet" />
+        
+        
+    </head>
+    
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            
+                <div class="container-fluid">
+                    <img th:src="@{/img/1.jpeg}" class="rounded mx-auto d-block " style="width: 10rem;margin-top: -10px">
+                    <a class="navbar-brand" href="#"></a>
+                    <img th:src="@{/img/2.jpeg}" class="rounded  " style="width: 13rem;margin-top: -5px; margin-left: 150px;">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                
+                                <a class="nav-link active" aria-current="page" th:href="@{/auth/main}"></a>
+                                
+                                
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"></a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <img th:src="@{/img/3.jpeg}" class="rounded " style="width: 11rem;margin-top: -5px ; margin-left: 1rem;">
+                                
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" th:href="@{/auth/main/productos}">Productos</a></li>
+                                    <li><a class="dropdown-item" th:href="@{/auth/main/roles}">Roles</a></li>
+                                    <li><a class="dropdown-item" th:href="@{/auth/main/sucursales}">Sucursales</a></li>
+                                    <li><a class="dropdown-item" th:href="@{/auth/main/users}">Users</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
+                                <img th:src="@{/img/4.jpeg}" class="rounded  " style="width: 13rem;margin-top: -5px; margin-left: 2rem;">
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                            <li class="nav-item dropdown">
+                                <img th:src="@{/img/5.jpeg}" class="rounded  " style="width: 5rem;margin-top: -1px; margin-left: 5rem;">
+                                <img th:src="@{/img/8.jpeg}" class="rounded  " style="width: 9rem;margin-top: 50px; margin-left: -570px;">
+                                <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="" data-bs-toggle="dropdown" aria-expanded="false" style="margin-top: -180px">
+                                    <img th:src="@{/img/6.jpeg}" class="rounded " style="width: 5rem; margin-top: 40px; margin-left: 160px;">
+                                    <img th:src="@{/img/7.jpeg}" class="rounded " style="width: 5rem; margin-top: 130px; margin-left: -85px;">
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" th:href="@{/auth/main/perfil}">Perfil</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" th:href="@{/}">Salir</a></li>
+                                    </div>
+                                    </nav>
+                                    
+                             

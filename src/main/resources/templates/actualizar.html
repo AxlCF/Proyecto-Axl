@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+    <head th:fragment="head">
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/82a228b425.js" crossorigin="anonymous"></script>
+        <link rel="icon" type="image/png" th:href="@{/assets/favicon.ico}" />
+        <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet" />
+
+    </head>
+    <body style='background-image: url(https://contigotv.pe/wp-content/uploads/2021/04/Chaclacayo-Lima-10.jpg) ; height: 65rem; background-position: center; background-repeat: no-repeat; background-size: cover; position: relative; overflow: hidden;'>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+                <div class="container-fluid">
+                    <img th:src="@{/img/1.jpeg}" class="rounded mx-auto d-block " style="width: 10rem;margin-top: -10px">
+                    <a class="navbar-brand" href="#"></a>
+                    <img th:src="@{/img/2.jpeg}" class="rounded  " style="width: 13rem;margin-top: -5px; margin-left: 150px;">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+
+                                <a class="nav-link active" aria-current="page" th:href="@{/auth/main}"></a>
+
+
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"></a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <img th:src="@{/img/3.jpeg}" class="rounded " style="width: 11rem;margin-top: -5px ; margin-left: 1rem;">
+
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" th:href="@{/auth/main/productos}">Productos</a></li>
+                                    <li><a class="dropdown-item" th:href="@{/auth/main/roles}">Roles</a></li>
+                                    <li><a class="dropdown-item" th:href="@{/auth/main/sucursales}">Sucursales</a></li>
+                                    <li><a class="dropdown-item" th:href="@{/auth/main/users}">Users</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
+                                <img th:src="@{/img/4.jpeg}" class="rounded  " style="width: 13rem;margin-top: -5px; margin-left: 2rem;">
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                            <li class="nav-item dropdown">
+                                <img th:src="@{/img/5.jpeg}" class="rounded  " style="width: 5rem;margin-top: -1px; margin-left: 5rem;">
+                                <img th:src="@{/img/8.jpeg}" class="rounded  " style="width: 9rem;margin-top: 50px; margin-left: -570px;">
+                                <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="" data-bs-toggle="dropdown" aria-expanded="false" style="margin-top: -180px">
+                                    <img th:src="@{/img/6.jpeg}" class="rounded " style="width: 5rem; margin-top: 40px; margin-left: 160px;">
+                                    <img th:src="@{/img/7.jpeg}" class="rounded " style="width: 5rem; margin-top: 130px; margin-left: -85px;">
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" th:href="@{/auth/main/perfil}">Perfil</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" th:href="@{/}">Salir</a></li>
+                                    </div>
+                                    </nav>
+
+
+
+                                    <button type="button" class="btn btn- " data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin-left:5rem; margin-top: -60px; width: 35%; height: 40px; background-color: #FEF500; color: black">
+                                        SOLICITUD PARA ACTUALIZACIÓN DE ORGANIZACIÓN
+                                    </button>
+
+                                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin-left: -425px; margin-top: 60px; width: 390px; height: 50px; background-color: #24C92E; color: white">
+                                        RELLENAR DOCUMENTO
+                                    </button>
+                                    <div>
+                                        <div style=' margin-top: -100px; width: 455px; height: 120px;margin-left: 80px; background: white; border-radius: 0px' class="container mt-100 ">
+                                        </div>
+
+                                        <div style='margin-top: -4.7%; margin-left: 400px' class="col-12">
+                                            <img style='width: 2.0%;' src="https://cdn.discordapp.com/attachments/892877408498229260/995391730092355686/unknown.png" alt=""> </img>        
+                                        </div>
+
+
+                                        <button type="button" class="btn btn- " data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin-left:5rem; margin-top: -12px; width: 35%; height: 40px; background-color: #FEF500; color: black">
+                                            ÁCTA DE ELECCIÓN DEL ORGANO DIRECTIVO
+                                        </button>
+
+                                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin-left: -425px; margin-top: 90px; width: 390px; height: 50px; background-color: #24C92E; color: white">
+                                            RELLENAR DOCUMENTO
+                                        </button>
+                                        <div>
+                                            <div style=' margin-top: -95px; width: 455px; height: 120px;margin-left: 80px; background: white; border-radius: 0px' class="container mt-100 ">
+                                            </div>
+
+                                            <div style='margin-top: -4.7%; margin-left: 400px' class="col-12">
+                                                <img style='width: 2.0%;' src="https://cdn.discordapp.com/attachments/892877408498229260/995391730092355686/unknown.png" alt=""> </img>        
+                                            </div>
+
+                                            <button type="button" class="btn btn- " data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin-left:5rem; margin-top: -12px; width: 35%; height: 40px; background-color: #FEF500; color: black">
+                                                ÁCTA DE FUNDACIÓN
+                                            </button>
+
+                                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin-left: -425px; margin-top: 90px; width: 390px; height: 50px; background-color: #24C92E; color: white">
+                                                RELLENAR DOCUMENTO
+                                            </button>
+                                            <div>
+                                                <div style=' margin-top: -95px; width: 455px; height: 120px;margin-left: 80px; background: white; border-radius: 0px' class="container mt-100 ">
+                                                </div>
+
+                                                <div style='margin-top: -4.7%; margin-left: 400px' class="col-12">
+                                                    <img style='width: 2.0%;' src="" alt=""> </img>        
+                                                </div>
+
+                                                <button type="button" class="btn btn- " data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin-left:5rem; margin-top: -12px; width: 35%; height: 40px; background-color: #FEF500; color: black">
+                                                    PLANO DE ACCIÓN DE LA ORGANIZACIÓN
+                                                </button>
+
+                                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin-left: -425px; margin-top: 90px; width: 390px; height: 50px; background-color: #24C92E; color: white">
+                                                    RELLENAR DOCUMENTO
+                                                </button>
+                                                <div>
+                                                    <div style=' margin-top: -95px; width: 455px; height: 120px;margin-left: 80px; background: white; border-radius: 0px' class="container mt-100 ">
+                                                    </div>
+
+                                                    <div style='margin-top: -4.7%; margin-left: 400px' class="col-12">
+                                                        <img style='width: 2.0%;' src="https://cdn.discordapp.com/attachments/892877408498229260/995391730092355686/unknown.png" alt=""> </img>        
+                                                    </div>
+
+                                                    <button type="button" class="btn btn- " data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin-left:700px; margin-top: -982px; width: 35%; height: 40px; background-color: #FEF500; color: black">
+                                                        CROQUIS REFERENCIAL DE LA UBICACIÓN DEL LOCAL
+                                                    </button>
+
+         
+                                                    <div>
+                                                        <div style=' margin-top: -520px; width: 455px; height: 120px;margin-left: 700px; background: white; border-radius: 0px' class="container mt-100 ">
+                                                        </div>
+
+                                                        <div style='margin-top: -4.7%; margin-left: 400px' class="col-12">
+                                                            <img style='width: 2.0%;' src="https://cdn.discordapp.com/attachments/892877408498229260/995391730092355686/unknown.png" alt=""> </img>        
+                                                        </div>
+
+                                                        <div style="margin-top: -55px; width: 390px; margin-left: 730px;">
+                                                            <label for="formFile" class="form-label"style="margin-left: "></label>
+                                                            <input class="form-control" type="file" id="formFile">
+                                                        </div>
+                                                        
+
+                                                        <button style="margin-top: -60px;margin-left: 113px;width: 390px; height:50px; background: #24C92E" type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#correo" data-bs-whatever="@getbootstrap">RELLENAR DOCUMENTO</button>
+
+                                                        <div class="modal fade" id="correo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                            <div class="modal-dialog">
+                                                                <div class="modal-content">
+                                                                    <div class=" bg-success modal-header">
+                                                                        <h5 class="modal-title text-white" id="exampleModalLabel">RELLENA EL CORREO</h5>
+                                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        <form>
+                                                                            <div class="mb-3">
+                                                                                <label for="recipient-name" class="col-form-label">PARA:</label>
+                                                                                <input type="text" class="form-control" id="recipient-name">
+                                                                            </div>
+                                                                            <div class="mb-3">
+                                                                                <label for="message-text" class="col-form-label">MENSAJE:</label>
+                                                                                <textarea class="form-control" id="message-text"></textarea>
+                                                                            </div>
+                                                                        </form>
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                                                                        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#awa">Enviar</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div style="margin-top: 159px" class="modal fade" id="awa" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                                            <div class="modal-dialog">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                        <h5>CORREO ENVIADO EXITOSAMENTE</h5>
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Aceptar</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div> 
+                                                    
+                                                    
+                                                    
+                                                    <button type="button" class="btn btn- " data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin-left:700px; margin-top: 10px; width: 35%; height: 40px; background-color: #FEF500; color: black">
+                                        ESTATUTO Y ACTA DE APROBACIÓN
+                                    </button>
+                                                    
+                                               <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin-left: 405px; margin-top: 90px; width: 390px; height: 50px; background-color:  color: white">
+                                            
+                                        </button>
+                                        <div>
+                                            <div style=' margin-top: -178px; width: 455px; height: 120px;margin-left: 700px; background: white; border-radius: 0px' class="container mt-100 ">
+                                            </div>
+                                            
+                                                    
+
+<div style="margin-top: -79px; width: 390px; margin-left: 730px;">
+                                                            <label for="formFile" class="form-label"style="margin-left: "></label>
+                                                            <input class="form-control" type="file" id="formFile">
+                                                        </div>
+                                            
+                                            
+<button type="button" class="btn btn- " data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin-left:695px; margin-top: 35px; width: 36%; height: 40px; background-color: #FEF500; color: black">
+                                        NOMINA DE LOS MIEMBROS DE LA ORGANIZACIÓN SOCIAL
+                                    </button>
+                                                    
+                                               <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin-left: 405px; margin-top: 90px; width: 490px; height: 50px; background-color:  color: white">
+                                            
+                                        </button>
+                                        <div>
+                                            <div style=' margin-top: -178px; width: 455px; height: 120px;margin-left: 700px; background: white; border-radius: 0px' class="container mt-100 ">
+                                            </div>
+                                            
+                                                    
+
+<div style="margin-top: -85px; width: 390px; margin-left: 730px;">
+                                                            <label for="formFile" class="form-label"style="margin-left: "></label>
+                                                            <input class="form-control" type="file" id="formFile">
+                                                        </div>
+
+                                            <button type="button" class="btn btn- " data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin-left:695px; margin-top: 35px; width: 36%; height: 40px; background-color: #FEF500; color: black">
+                                        NOMINA DE LOS MIEMBROS DEL ORGANO DIRECTIVO
+                                    </button>
+                                                    
+                                               <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin-left: 405px; margin-top: 90px; width: 390px; height: 50px; background-color:  color: white">
+                                            
+                                        </button>
+                                        <div>
+                                            <div style=' margin-top: -178px; width: 455px; height: 120px;margin-left: 700px; background: white; border-radius: 0px' class="container mt-100 ">
+                                            </div>
+                                            
+                                                    
+
+<div style="margin-top: -85px; width: 390px; margin-left: 730px;">
+                                                            <label for="formFile" class="form-label"style="margin-left: "></label>
+                                                            <input class="form-control" type="file" id="formFile">
+                                                            
+                                                        </div>
+  <button style="margin-top: -615px;margin-left: 113px;width: 390px; height:50px; background: #24C92E" type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#correo" data-bs-whatever="@getbootstrap">RELLENAR DOCUMENTO</button>
+
+                                                        <div class="modal fade" id="correo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                            <div class="modal-dialog">
+                                                                <div class="modal-content">
+                                                                    <div class=" bg-success modal-header">
+                                                                        <h5 class="modal-title text-white" id="exampleModalLabel">RELLENA EL CORREO</h5>
+                                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        <form>
+                                                                            <div class="mb-3">
+                                                                                <label for="recipient-name" class="col-form-label">PARA:</label>
+                                                                                <input type="text" class="form-control" id="recipient-name">
+                                                                            </div>
+                                                                            <div class="mb-3">
+                                                                                <label for="message-text" class="col-form-label">MENSAJE:</label>
+                                                                                <textarea class="form-control" id="message-text"></textarea>
+                                                                            </div>
+                                                                        </form>
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                                                                        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#awa">Enviar</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div style="margin-top: 170px" class="modal fade" id="awa" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                                            <div class="modal-dialog">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                        <h5>CORREO ENVIADO EXITOSAMENTE</h5>
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Aceptar</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div> 
+                                            <div style="margin-top: -23px; width: 390px; margin-left: 750px;">
+                                                            
+                                                            
+                                                        </div>
+                                            <div class="d-grid gap-2">                    
+                <input style='background: #24C92E; border-radius: 15px; border-color: #24C92E; width: 270px; margin-left:815px; margin-top:35px' type="submit" value="ENVIAR SOLICITUD" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" class="btn btn-primary">
+
+               
+
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+
+                    <div class="modal-dialog modal-dialog-centered" >
+                        <div class="modal-content mb-2 " style="width: 30rem; border-radius: 1rem; " >
+                            <div class="d-flex p-3 justify-content-end mt-2">
+                                <button type="button" class="btn-close mt-2 " style="margin-right: 0.5rem" data-bs-dismiss="modal" aria-label="Close"></button> 
+                            </div>
+                            <img th:src="@{/img/1.jpeg}" class="rounded mx-auto d-block" style="width: 8rem">
+                            <h1 style="font-size: 1.5rem;text-align: center; color: #0A9200; margin-top: 10px">SOLICITUD ENVIADA</h1>
+                            <hr class="mx-auto" style="width: 25rem">
+                            <div class="mx-auto mb-5" style="width: 22rem">
+                                <h6 style="text-align: center">Su Solicitud fue Actualizada Exitosamente</h6>
+                                <a th:href="@{/auth/main/}" type="submit" class="btn btn-primary mt-3" style="width:13rem;margin-left: 4.50rem;background-color: #0A9200;border-radius: 20px;border-color: #DDFF00;font-weight: 600">CONTINUAR</a>
+                            </div>
+
+                            
+                             
+                       </div>
+                    </div>
+                </div>
+  <button style="margin-top: -136px;margin-left: 113px;width: 390px; height:50px; background: #24C92E" type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#correo" data-bs-whatever="@getbootstrap">RELLENAR DOCUMENTO</button>
+
+                                                        <div class="modal fade" id="correo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                            <div class="modal-dialog">
+                                                                <div class="modal-content">
+                                                                    <div class=" bg-success modal-header">
+                                                                        <h5 class="modal-title text-white" id="exampleModalLabel">RELLENA EL CORREO</h5>
+                                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        <form>
+                                                                            <div class="mb-3">
+                                                                                <label for="recipient-name" class="col-form-label">PARA:</label>
+                                                                                <input type="text" class="form-control" id="recipient-name">
+                                                                            </div>
+                                                                            <div class="mb-3">
+                                                                                <label for="message-text" class="col-form-label">MENSAJE:</label>
+                                                                                <textarea class="form-control" id="message-text"></textarea>
+                                                                            </div>
+                                                                        </form>
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                                                                        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#awa">Enviar</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div style="margin-top: 170px" class="modal fade" id="awa" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                                            <div class="modal-dialog">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                        <h5>CORREO ENVIADO EXITOSAMENTE</h5>
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Aceptar</button>
+                                                                    </div>
+                                                                    
+                                                                    
+                                                                    
+                                                                    
+                                                                    
+                                                                    
+                                                                    
+                                                                   
+
+
+
+
+                                              
+                                                <script th:src="@{/js/bootstrap.min.js}"></script>
+                                                <script src="https://kit.fontawesome.com/82a228b425.js" crossorigin="anonymous"></script>
+
+                                                </body>
+
+
+
+
+
+
+
+
+                                                </html>
